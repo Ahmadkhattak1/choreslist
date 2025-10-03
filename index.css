@@ -1,0 +1,77 @@
+/*
+
+COLOR PALETTE
+
+WHITE: #FEFEFE
+BLACK: #000000
+TEXT INPUT BACKGROUND: #EEEEEE
+ADD BUTTON: #FFCC68
+DELETE BUTTON: #FF9548
+CHORE: #FBDF7C
+
+*/
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+h1 {
+    font-family: 'Concert One', cursive;
+    text-align: center;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+}
+
+
+#input-chore {
+    text-align: center;
+    border: none;
+    background-color: #EEEEEE;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
+
+.btn {
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#delete-chore-btn {
+    background-color: #FF9548;
+}
+
+#submit-chore-btn{
+    background-color: #FFCC68;
+}
+
+/* chores list div */
+.chore-list-div {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+.chore-list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFCC68;
+    height: 50px;
+    width: 355px;
+    border-radius: 10px;
+    margin: 10px 0px;
+}
+
+.chore-list-item:hover{
+    cursor: pointer;
+}
