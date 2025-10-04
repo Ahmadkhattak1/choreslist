@@ -20,6 +20,16 @@ html, body {
     padding: 0;
     
 }
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateX(-80px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0px);
+    }
+}
 
 h1 {
     font-family: 'Concert One', cursive;
@@ -63,15 +73,51 @@ button {
 
 .chore-list-item {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: #FFCC68;
     height: 50px;
-    width: 355px;
+    width: 250px;
     border-radius: 10px;
-    margin: 10px 0px;
+    margin-right: 20px;
+    margin-top:10px;
+    margin-bottom:10px;
+    padding-left:20px;
+    padding-right:10px;
+    animation: fadeIn 0.3s 1;
 }
 
 .chore-list-item:hover{
     cursor: pointer;
+}
+
+#chore-item-el{
+    display:flex;
+    flex-direction:column;
+    justify-content:end;
+    list-style-type:none;
+    margin-top:150px;
+    
+}
+.btnDeleteItem{
+    
+    color:#c31010e5;
+    border-radius:50px;
+    border-width:0px;
+    height:35px;
+    background-color:black;
+    transition: transform 0.3s, color 0.5s;
+    background:none;
+}
+.btnDeleteItem:hover{
+    color:red;
+    transform:scale(1.1,1.1);
+    }
+.container{
+    position:fixed;
+    top:0;
+    background-color:white;
+    padding-bottom:30px;
+    border-bottom-style:solid;
+    border-bottom-color:grey;
 }
